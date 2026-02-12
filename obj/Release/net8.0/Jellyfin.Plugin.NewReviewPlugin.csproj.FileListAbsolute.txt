@@ -1,0 +1,12 @@
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.csproj.AssemblyReference.cache
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.AssemblyInfoInputs.cache
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.AssemblyInfo.cs
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.csproj.CoreCompileInputs.cache
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\bin\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.deps.json
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\bin\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.dll
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\bin\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.pdb
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.dll
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\refint\Jellyfin.Plugin.NewReviewPlugin.dll
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\Jellyfin.Plugin.NewReviewPlugin.pdb
+C:\Users\luisc\Desktop\tito\jellyfin\NEWREVIEWPLUGIN\obj\Release\net8.0\ref\Jellyfin.Plugin.NewReviewPlugin.dll
