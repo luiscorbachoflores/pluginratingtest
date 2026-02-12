@@ -5,9 +5,17 @@
     "overview":  "Permite a los usuarios reseñar contenido.",
     "owner":  "Jellyfin User",
     "category":  "General",
-    "version":  "1.0.0.0",
-    "targetAbi":  "10.9.11.0",
+    "version":  "1.0.0.1",
+    "targetAbi":  "10.11.6.0",
     "versions":  [
+                     {
+                         "version":  "1.0.0.1",
+                         "changelog":  "Update target ABI to 10.11.6",
+                         "targetAbi":  "10.11.6.0",
+                         "sourceUrl":  "https://github.com/luiscorbachoflores/pluginratingtest/releases/download/1.0.0.1/plugin_reviews.zip",
+                         "checksum":  "02898410a8364035c6b264fac7176ca6",
+                         "timestamp":  "2026-02-12T16:26:53Z"
+                     },
                      {
                          "version":  "1.0.0.0",
                          "changelog":  "Initial release",

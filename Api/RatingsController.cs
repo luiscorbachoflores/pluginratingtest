@@ -45,7 +45,7 @@ namespace Jellyfin.Plugin.NewReviewPlugin.Api
 
         [HttpPost("Rate")]
         [Produces(MediaTypeNames.Application.Json)]
-        public async Task<ActionResult> RateItem([FromQuery] Guid itemId, [FromQuery] Guid userId, [FromQuery] int rating, [FromQuery] string? note, [FromQuery] string? userName)
+        public ActionResult RateItem([FromQuery] Guid itemId, [FromQuery] Guid userId, [FromQuery] int rating, [FromQuery] string? note, [FromQuery] string? userName)
         {
             try
             {
