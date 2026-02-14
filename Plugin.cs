@@ -2,22 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-using Jellyfin.Plugin.NewReviewPlugin.Configuration;
+using Jellyfin.Plugin.UserRatings.Configuration;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Plugins;
 using MediaBrowser.Model.Serialization;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Jellyfin.Plugin.NewReviewPlugin
+namespace Jellyfin.Plugin.UserRatings
 {
     public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
         private readonly ILogger<Plugin> _logger;
 
-        public override string Name => "New Review Plugin";
+        public override string Name => "User Ratings";
 
-        public override Guid Id => Guid.Parse("a1b2c3d4-e5f6-7890-1234-567890abcdef");
+        public override Guid Id => Guid.Parse("b8c5d3e7-4f6a-8b9c-1d2e-3f4a5b6c7d8e");
 
         public Plugin(IApplicationPaths applicationPaths, IXmlSerializer xmlSerializer, ILogger<Plugin> logger)
             : base(applicationPaths, xmlSerializer)
@@ -34,14 +35,14 @@ namespace Jellyfin.Plugin.NewReviewPlugin
                     string indexContents = File.ReadAllText(indexFile);
                     
                     // Script to inject
-                    string scriptReplace = "<script plugin=\"NewReviewPlugin\".*?</script>";
-                    string scriptElement = "<script plugin=\"NewReviewPlugin\" src=\"/web/ConfigurationPage?name=ratings.js\"></script>";
+                    string scriptReplace = "<script plugin=\"UserRatings\".*?</script>";
+                    string scriptElement = "<script plugin=\"UserRatings\" src=\"/web/ConfigurationPage?name=ratings.js\"></script>";
                     
                     if (!indexContents.Contains(scriptElement))
                     {
-                        _logger.LogInformation("Inyectando script de NewReviewPlugin en {indexFile}", indexFile);
+                        _logger.LogInformation("Injecting User Ratings script into {indexFile}", indexFile);
                         
-                        // Remove old scripts from this plugin
+                        // Remove old scripts
                         indexContents = Regex.Replace(indexContents, scriptReplace, "", RegexOptions.Singleline);
                         
                         // Insert script before closing body tag
@@ -53,13 +54,17 @@ namespace Jellyfin.Plugin.NewReviewPlugin
                             try
                             {
                                 File.WriteAllText(indexFile, indexContents);
-                                _logger.LogInformation("Script de NewReviewPlugin inyectado con éxito");
+                                _logger.LogInformation("Successfully injected User Ratings script");
                             }
                             catch (Exception e)
                             {
-                                _logger.LogError(e, "Error escribiendo en {indexFile}", indexFile);
+                                _logger.LogError(e, "Error writing to {indexFile}", indexFile);
                             }
                         }
+                    }
+                    else
+                    {
+                        _logger.LogInformation("User Ratings script already injected");
                     }
                 }
             }
@@ -73,9 +78,8 @@ namespace Jellyfin.Plugin.NewReviewPlugin
             {
                 new PluginPageInfo
                 {
-                    Name = "NewReviewPluginConfig",
-                    EmbeddedResourcePath = GetType().Namespace + ".Configuration.configPage.html",
-                    EnableInMainMenu = true
+                    Name = this.Name,
+                    EmbeddedResourcePath = GetType().Namespace + ".Configuration.configPage.html"
                 },
                 new PluginPageInfo
                 {

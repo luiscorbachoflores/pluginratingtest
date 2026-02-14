@@ -57,10 +57,10 @@
           }
         }
       },
-      "Jellyfin.Common/10.9.11": {
+      "Jellyfin.Common/10.9.0": {
         "type": "package",
         "dependencies": {
-          "Jellyfin.Model": "10.9.11",
+          "Jellyfin.Model": "10.9.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
         },
@@ -78,15 +78,15 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Jellyfin.Controller/10.9.11": {
+      "Jellyfin.Controller/10.9.0": {
         "type": "package",
         "dependencies": {
-          "Jellyfin.Common": "10.9.11",
-          "Jellyfin.Model": "10.9.11",
-          "Jellyfin.Naming": "10.9.11",
+          "Jellyfin.Common": "10.9.0",
+          "Jellyfin.Model": "10.9.0",
+          "Jellyfin.Naming": "10.9.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "8.0.2",
-          "System.Threading.Tasks.Dataflow": "8.0.1"
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "System.Threading.Tasks.Dataflow": "8.0.0"
         },
         "compile": {
           "lib/net8.0/MediaBrowser.Controller.dll": {
@@ -99,7 +99,7 @@
           }
         }
       },
-      "Jellyfin.Data/10.9.11": {
+      "Jellyfin.Data/10.9.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "8.0.0"
@@ -115,7 +115,7 @@
           }
         }
       },
-      "Jellyfin.Extensions/10.9.11": {
+      "Jellyfin.Extensions/10.9.0": {
         "type": "package",
         "dependencies": {
           "Diacritics": "3.3.29",
@@ -132,15 +132,15 @@
           }
         }
       },
-      "Jellyfin.Model/10.9.11": {
+      "Jellyfin.Model/10.9.0": {
         "type": "package",
         "dependencies": {
-          "Jellyfin.Data": "10.9.11",
-          "Jellyfin.Extensions": "10.9.11",
+          "Jellyfin.Data": "10.9.0",
+          "Jellyfin.Extensions": "10.9.0",
           "Microsoft.AspNetCore.HttpOverrides": "2.2.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
           "System.Globalization": "4.3.0",
-          "System.Text.Json": "8.0.4"
+          "System.Text.Json": "8.0.3"
         },
         "compile": {
           "lib/net8.0/MediaBrowser.Model.dll": {
@@ -153,11 +153,11 @@
           }
         }
       },
-      "Jellyfin.Naming/10.9.11": {
+      "Jellyfin.Naming/10.9.0": {
         "type": "package",
         "dependencies": {
-          "Jellyfin.Common": "10.9.11",
-          "Jellyfin.Model": "10.9.11"
+          "Jellyfin.Common": "10.9.0",
+          "Jellyfin.Model": "10.9.0"
         },
         "compile": {
           "lib/net8.0/Emby.Naming.dll": {
@@ -293,7 +293,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Binder/8.0.2": {
+      "Microsoft.Extensions.Configuration.Binder/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
@@ -530,7 +530,7 @@
           }
         }
       },
-      "System.Text.Json/8.0.4": {
+      "System.Text.Json/8.0.3": {
         "type": "package",
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
@@ -549,7 +549,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "System.Threading.Tasks.Dataflow/8.0.1": {
+      "System.Threading.Tasks.Dataflow/8.0.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Threading.Tasks.Dataflow.dll": {
@@ -650,79 +650,79 @@
         "readme.md"
       ]
     },
-    "Jellyfin.Common/10.9.11": {
-      "sha512": "UxXdWzoReqQkV7+MOChNbOX9YBlfx8oz4/GKI7PjBDkzjLCDKiQTcVJk8/GceiMSZ05+5g34qGCp2snO8qRBHQ==",
+    "Jellyfin.Common/10.9.0": {
+      "sha512": "xL92GGnM/3QjsPDjpsXnNTGJdR/8n0xfUNma63HOKxZ+QJS1fZdbGyJvkb3A4X8U7MoWidUE3LwudezMvW4pDg==",
       "type": "package",
-      "path": "jellyfin.common/10.9.11",
+      "path": "jellyfin.common/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.common.10.9.11.nupkg.sha512",
+        "jellyfin.common.10.9.0.nupkg.sha512",
         "jellyfin.common.nuspec",
         "lib/net8.0/MediaBrowser.Common.dll",
         "lib/net8.0/MediaBrowser.Common.xml"
       ]
     },
-    "Jellyfin.Controller/10.9.11": {
-      "sha512": "BT/4AILCNMEKlP3jl1hvktSvCtG2gArwaGGrFIM6C92ioEfuNBIpLdLCAF1k/YnCOE1X0xVE9yp6uCPjb2sPeQ==",
+    "Jellyfin.Controller/10.9.0": {
+      "sha512": "YK2gi+GBw1Lv3J2LjjQng57YvgAv1Krf/h42xa30keFZaxUxbR/0M4QlcLPvZKhFlGZ5Ui5H2MzY3oukkWK5Ng==",
       "type": "package",
-      "path": "jellyfin.controller/10.9.11",
+      "path": "jellyfin.controller/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.controller.10.9.11.nupkg.sha512",
+        "jellyfin.controller.10.9.0.nupkg.sha512",
         "jellyfin.controller.nuspec",
         "lib/net8.0/MediaBrowser.Controller.dll",
         "lib/net8.0/MediaBrowser.Controller.xml"
       ]
     },
-    "Jellyfin.Data/10.9.11": {
-      "sha512": "ovZfELGxQlMsX1voE4wbimWWDbQKfuv1aiggaE6rllZbqCRhWJhKiTB89i4SG62k/plCUIk9k6qxlBfTyCIGjQ==",
+    "Jellyfin.Data/10.9.0": {
+      "sha512": "HgRFL7ziGfWN2LEtEzr3UwZuykm9PrZjmuJaCMr3tJdAyrtHW1/RH8r8bbi+pqZUG2wvAM+YBuCZI6jOWWCPPw==",
       "type": "package",
-      "path": "jellyfin.data/10.9.11",
+      "path": "jellyfin.data/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.data.10.9.11.nupkg.sha512",
+        "jellyfin.data.10.9.0.nupkg.sha512",
         "jellyfin.data.nuspec",
         "lib/net8.0/Jellyfin.Data.dll",
         "lib/net8.0/Jellyfin.Data.xml"
       ]
     },
-    "Jellyfin.Extensions/10.9.11": {
-      "sha512": "5DmxbMRzqa6AFJAA3mYMlROzRqmFBtSzUVdyaOXwJ3aQgkSktqPJnIqyEoRk4U7FIPoIcS9qmVDXCxvX8VSV6w==",
+    "Jellyfin.Extensions/10.9.0": {
+      "sha512": "GT/d852vpX4VbgaL66dHVfd+D/o/AbdOJYxjQINS/McURe0z3QUjbX3hJ+83PN9gb5xIuoRKcZynbXvA7Tj1Hg==",
       "type": "package",
-      "path": "jellyfin.extensions/10.9.11",
+      "path": "jellyfin.extensions/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.extensions.10.9.11.nupkg.sha512",
+        "jellyfin.extensions.10.9.0.nupkg.sha512",
         "jellyfin.extensions.nuspec",
         "lib/net8.0/Jellyfin.Extensions.dll",
         "lib/net8.0/Jellyfin.Extensions.xml"
       ]
     },
-    "Jellyfin.Model/10.9.11": {
-      "sha512": "Cd4hh67oTf46dKNVzNqTyJdYYDczNapvK39GMQK9uqYcjVrRCcxNo8VywXUS7AUud92aG9xWX7QvssbDIWesAA==",
+    "Jellyfin.Model/10.9.0": {
+      "sha512": "BwkJCRRRVUWa7Nr9rymsrK8ybPTAsq/lrw+cExPyRYBwJnoqPtFVjoQndiF58WR9ToxK7Z/5wD1ouJp2/VSj2w==",
       "type": "package",
-      "path": "jellyfin.model/10.9.11",
+      "path": "jellyfin.model/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.model.10.9.11.nupkg.sha512",
+        "jellyfin.model.10.9.0.nupkg.sha512",
         "jellyfin.model.nuspec",
         "lib/net8.0/MediaBrowser.Model.dll",
         "lib/net8.0/MediaBrowser.Model.xml"
       ]
     },
-    "Jellyfin.Naming/10.9.11": {
-      "sha512": "0TAifRd4/27s74AGc1tVh3+7MgWLF/xV8z1/lfsI1YtxWWDoM0GN2VLVtaQ7ltcXckCqo1KyHP0uzqGfDls48Q==",
+    "Jellyfin.Naming/10.9.0": {
+      "sha512": "orjzWkIEV1NB/3kP+4VY6IgreSAzCcCl+SXK+RAgBbt2N5D0pFxpyAfNBIzJvIuYzp2psAU9sK0/0mL2T2bvtA==",
       "type": "package",
-      "path": "jellyfin.naming/10.9.11",
+      "path": "jellyfin.naming/10.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "jellyfin.naming.10.9.11.nupkg.sha512",
+        "jellyfin.naming.10.9.0.nupkg.sha512",
         "jellyfin.naming.nuspec",
         "lib/net8.0/Emby.Naming.dll",
         "lib/net8.0/Emby.Naming.xml"
@@ -836,10 +836,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Binder/8.0.2": {
-      "sha512": "7IQhGK+wjyGrNsPBjJcZwWAr+Wf6D4+TwOptUt77bWtgNkiV8tDEbhFS+dDamtQFZ2X7kWG9m71iZQRj2x3zgQ==",
+    "Microsoft.Extensions.Configuration.Binder/8.0.1": {
+      "sha512": "2UKFJnLiBt7Od6nCnTqP9rTIUNhzmn9Hv1l2FchyKbz8xieB9ULwZTbQZMw+M24Qw3F5dzzH1U9PPleN0LNLOQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.binder/8.0.2",
+      "path": "microsoft.extensions.configuration.binder/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -872,7 +872,7 @@
         "lib/net8.0/Microsoft.Extensions.Configuration.Binder.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
-        "microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
         "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1403,10 +1403,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/8.0.4": {
-      "sha512": "bAkhgDJ88XTsqczoxEMliSrpijKZHhbJQldhAmObj/RbrN3sU5dcokuXmWJWsdQAhiMJ9bTayWsL1C9fbbCRhw==",
+    "System.Text.Json/8.0.3": {
+      "sha512": "hpagS9joOwv6efWfrMmV9MjQXpiXZH72PgN067Ysfr6AWMSD1/1hEcvh/U5mUpPLezEWsOJSuVrmqDIVD958iA==",
       "type": "package",
-      "path": "system.text.json/8.0.4",
+      "path": "system.text.json/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1471,15 +1471,15 @@
         "lib/net8.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.8.0.4.nupkg.sha512",
+        "system.text.json.8.0.3.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Threading.Tasks.Dataflow/8.0.1": {
-      "sha512": "4pjq2vIPNZkKA9asAXzf5IRBb7K+b0+UQZZbpv6g029sAPZgnKdg/NNOC/DbJL8SWqYcFMVjb/T/YEmb0PHUYg==",
+    "System.Threading.Tasks.Dataflow/8.0.0": {
+      "sha512": "7V0I8tPa9V7UxMx/+7DIwkhls5ouaEMQx6l/GwGm1Y8kJQ61On9B/PxCXFLbgu5/C47g0BP2CUYs+nMv1+Oaqw==",
       "type": "package",
-      "path": "system.threading.tasks.dataflow/8.0.1",
+      "path": "system.threading.tasks.dataflow/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1502,7 +1502,7 @@
         "lib/netstandard2.0/System.Threading.Tasks.Dataflow.xml",
         "lib/netstandard2.1/System.Threading.Tasks.Dataflow.dll",
         "lib/netstandard2.1/System.Threading.Tasks.Dataflow.xml",
-        "system.threading.tasks.dataflow.8.0.1.nupkg.sha512",
+        "system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
         "system.threading.tasks.dataflow.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1510,36 +1510,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Jellyfin.Controller >= 10.9.11",
-      "Jellyfin.Model >= 10.9.11"
+      "Jellyfin.Controller >= 10.9.0",
+      "Jellyfin.Model >= 10.9.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luisc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/vboxuser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisc\\Desktop\\tito\\jellyfin\\NEWREVIEWPLUGIN\\Jellyfin.Plugin.NewReviewPlugin.csproj",
-      "projectName": "Jellyfin.Plugin.NewReviewPlugin",
-      "projectPath": "C:\\Users\\luisc\\Desktop\\tito\\jellyfin\\NEWREVIEWPLUGIN\\Jellyfin.Plugin.NewReviewPlugin.csproj",
-      "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisc\\Desktop\\tito\\jellyfin\\NEWREVIEWPLUGIN\\obj\\",
+      "projectUniqueName": "/home/vboxuser/jellyfin-plugin/src/Jellyfin.Plugin.UserRatings.csproj",
+      "projectName": "Jellyfin.Plugin.UserRatings",
+      "projectPath": "/home/vboxuser/jellyfin-plugin/src/Jellyfin.Plugin.UserRatings.csproj",
+      "packagesPath": "/home/vboxuser/.nuget/packages/",
+      "outputPath": "/home/vboxuser/jellyfin-plugin/src/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/vboxuser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1557,8 +1550,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -1566,11 +1558,11 @@
         "dependencies": {
           "Jellyfin.Controller": {
             "target": "Package",
-            "version": "[10.9.11, )"
+            "version": "[10.9.0, )"
           },
           "Jellyfin.Model": {
             "target": "Package",
-            "version": "[10.9.11, )"
+            "version": "[10.9.0, )"
           }
         },
         "imports": [
@@ -1584,29 +1576,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
-          }
-        ],
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/vboxuser/.dotnet/sdk/8.0.418/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

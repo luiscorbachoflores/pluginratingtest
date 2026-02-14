@@ -1,0 +1,16 @@
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Jellyfin.Plugin.UserRatings.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Jellyfin.Plugin.UserRatings.deps.json
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Jellyfin.Plugin.UserRatings.pdb
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Diacritics.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/ICU4N.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/ICU4N.Transliterator.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/J2N.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/MediaBrowser.Common.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/MediaBrowser.Controller.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Jellyfin.Data.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Jellyfin.Extensions.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/MediaBrowser.Model.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Emby.Naming.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Microsoft.Extensions.Configuration.Binder.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/publish/Microsoft.Extensions.Logging.Abstractions.dll

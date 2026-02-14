@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using Jellyfin.Plugin.NewReviewPlugin.Models;
+using Jellyfin.Plugin.UserRatings.Models;
 using MediaBrowser.Common.Configuration;
 
-namespace Jellyfin.Plugin.NewReviewPlugin.Data
+namespace Jellyfin.Plugin.UserRatings.Data
 {
     public class RatingRepository
     {
@@ -16,7 +16,7 @@ namespace Jellyfin.Plugin.NewReviewPlugin.Data
 
         public RatingRepository(IApplicationPaths appPaths)
         {
-            _dataPath = Path.Combine(appPaths.PluginConfigurationsPath, "NewReviewPlugin", "ratings.json");
+            _dataPath = Path.Combine(appPaths.PluginConfigurationsPath, "UserRatings", "ratings.json");
             Directory.CreateDirectory(Path.GetDirectoryName(_dataPath)!);
             LoadRatings();
         }
@@ -158,17 +158,51 @@ namespace Jellyfin.Plugin.NewReviewPlugin.Data
                 return _ratings.Values.ToList();
             }
         }
-        
-        public void ImportRatings(List<UserRating> ratings)
+
+        public string GetHistoryFilePath()
         {
-             lock (_lock)
+            return Path.Combine(Path.GetDirectoryName(_dataPath)!, "ratings_history.csv");
+        }
+
+        public void AppendToHistory(UserRating rating)
+        {
+            try
             {
-                foreach (var rating in ratings)
+                var filePath = GetHistoryFilePath();
+                bool fileExists = File.Exists(filePath);
+
+                lock (_lock)
                 {
-                    var key = GetKey(rating.ItemId, rating.UserId);
-                    _ratings[key] = rating;
+                    using (var sw = new StreamWriter(filePath, true))
+                    {
+                        if (!fileExists)
+                        {
+                            sw.WriteLine("Timestamp,UserId,UserName,ItemId,Rating,Note");
+                        }
+
+                        // Basic CSV escaping
+                        var note = rating.Note?.Replace("\"", "\"\"") ?? "";
+                        if (note.Contains(",") || note.Contains("\n") || note.Contains("\r"))
+                        {
+                            note = $"\"{note}\"";
+                        }
+
+                        var userName = rating.UserName?.Replace("\"", "\"\"") ?? "Unknown";
+                        if (userName.Contains(","))
+                        {
+                            userName = $"\"{userName}\"";
+                        }
+
+                        sw.WriteLine($"{rating.Timestamp:O},{rating.UserId},{userName},{rating.ItemId},{rating.Rating},{note}");
+                    }
                 }
-                SaveRatings();
+            }
+            catch (Exception ex)
+            {
+                // Log error safely? Or just ignore preventing crash?
+                // For now we swallow to ensure main flow continues, but ideally should log via injected logger if available.
+                // Since this class doesn't have logger, we proceed.
+                Console.WriteLine($"Error writing history: {ex.Message}");
             }
         }
     }

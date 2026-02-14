@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>New Review Plugin Configuration</title>
+    <meta charset="utf-8" />
+    <title>User Ratings Configuration</title>
 </head>
 
 <body>
-    <div data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-button,emby-input">
+    <div id="UserRatingsConfigPage" data-role="page" class="page type-interior pluginConfigurationPage"
+        data-controller="__plugin/ratings.js">
         <div data-role="content">
             <div class="content-primary">
-                <h1>Configuración de Reseñas</h1>
 
                 <div class="verticalSection">
-                    <h2>Exportar Datos</h2>
-                    <p>Descarga todas las reseñas y calificaciones en formato JSON.</p>
-                    <a is="emby-button" class="raised button-submit block" href="/api/NewReviewPlugin/Export"
-                        target="_blank">
-                        Exportar Reseñas (JSON)
-                    </a>
+                    <h2 class="sectionTitle">User Ratings Plugin</h2>
+                    <p>This plugin allows users to rate and review items.</p>
                 </div>
+
+                <div class="verticalSection">
+                    <h2 class="sectionTitle">Import / Export Reviews</h2>
+
+                    <!-- EXPORT -->
+                    <div class="inputContainer">
+                        <p>Download all server reviews as JSON or CSV.</p>
+                        <div style="display: flex; gap: 10px;">
+                            <button id="btnExportRatings" type="button" is="emby-button"
+                                class="raised button-submit block" style="width: auto;">
+                                <span>⬇ Export (JSON)</span>
+                            </button>
+                            <button id="btnExportRatingsCsv" type="button" is="emby-button"
+                                class="raised button-submit block" style="width: auto;">
+                                <span>⬇ Export (CSV)</span>
+                            </button>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <button id="btnExportHistory" type="button" is="emby-button"
+                                class="raised button-submit block" style="width: auto; background-color: #333;">
+                                <span>📜 Download History Log (CSV)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <!-- IMPORT -->
+                    <div class="inputContainer">
+                        <p>Import reviews from a previously exported JSON file.</p>
+                        <input type="file" id="importFileInput" accept=".json" style="margin-bottom: 8px;" />
+                        <button id="btnImportRatings" class="raised button-submit block">
+                            <span>⬆ Import Reviews</span>
+                        </button>
+                        <p id="importStatus" style="color: green; display:none;"></p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

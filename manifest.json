@@ -1,28 +1,20 @@
-{
-    "guid":  "a1b2c3d4-e5f6-7890-1234-567890abcdef",
-    "name":  "New Review Plugin",
-    "description":  "Sistema de reseñas y calificaciones con notificaciones",
-    "overview":  "Permite a los usuarios reseñar contenido.",
-    "owner":  "Jellyfin User",
-    "category":  "General",
-    "version":  "1.0.0.1",
-    "targetAbi":  "10.11.6.0",
-    "versions":  [
-                     {
-                         "version":  "1.0.0.1",
-                         "changelog":  "Update target ABI to 10.11.6",
-                         "targetAbi":  "10.11.6.0",
-                         "sourceUrl":  "https://github.com/luiscorbachoflores/pluginratingtest/releases/download/1.0.0.1/plugin_reviews.zip",
-                         "checksum":  "02898410a8364035c6b264fac7176ca6",
-                         "timestamp":  "2026-02-12T16:26:53Z"
-                     },
-                     {
-                         "version":  "1.0.0.0",
-                         "changelog":  "Initial release",
-                         "targetAbi":  "10.9.11.0",
-                         "sourceUrl":  "https://github.com/luiscorbachoflores/pluginratingtest/releases/download/1.0.0.0/plugin_reviews.zip",
-                         "checksum":  "3ee54351c1160efac2f460c8fcb0f4ab",
-                         "timestamp":  "2026-02-12T15:33:11Z"
-                     }
-                 ]
-}
+[
+    {
+        "guid": "b8c5d3e7-4f6a-8b9c-1d2e-3f4a5b6c7d8e",
+        "name": "User Ratings",
+        "description": "Allows users to rate and review items, with import/export functionality.",
+        "overview": "A Jellyfin plugin that enables user ratings, reviews, and history logging.",
+        "owner": "luiscorbachoflores",
+        "category": "Metadata",
+        "versions": [
+            {
+                "version": "1.7.32.0",
+                "changelog": "Added CSV Export and History Log features.",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/luiscorbachoflores/pluginratingtest/releases/download/v1.7.32.0/Jellyfin.Plugin.UserRatings.zip",
+                "checksum": "{CHECKSUM_PLACEHOLDER}",
+                "timestamp": "2026-02-14T00:00:00Z"
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.csproj.AssemblyReference.cache
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.GeneratedMSBuildEditorConfig.editorconfig
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.AssemblyInfoInputs.cache
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.AssemblyInfo.cs
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.csproj.CoreCompileInputs.cache
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/Jellyfin.Plugin.UserRatings.deps.json
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/Jellyfin.Plugin.UserRatings.dll
+/home/vboxuser/jellyfin-plugin/src/bin/Release/net8.0/Jellyfin.Plugin.UserRatings.pdb
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.dll
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/refint/Jellyfin.Plugin.UserRatings.dll
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/Jellyfin.Plugin.UserRatings.pdb
+/home/vboxuser/jellyfin-plugin/src/obj/Release/net8.0/ref/Jellyfin.Plugin.UserRatings.dll
